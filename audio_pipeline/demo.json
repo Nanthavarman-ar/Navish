@@ -1,0 +1,74 @@
+{
+  "title": "The Lantern Keeper - Ep 1",
+  "size": [
+    1080,
+    1920
+  ],
+  "music": "music/bg.mp3",
+  "music_gain": 0.25,
+  "sfx_library": "sfx_library",
+  "sfx_model_cmd": "",
+  "words_per_caption": 3,
+  "output": "demo_final.mp4",
+  "characters": {
+    "narrator": {
+      "voice_ref": "voices/narrator.wav",
+      "exaggeration": 0.45,
+      "cfg_weight": 0.5
+    },
+    "mira": {
+      "voice_ref": "voices/mira.wav",
+      "exaggeration": 0.6,
+      "voice_refs": {
+        "scared": "voices/mira_scared.wav",
+        "happy": "voices/mira_happy.wav"
+      }
+    },
+    "old_man": {
+      "voice_ref": "voices/old_man.wav",
+      "exaggeration": 0.4,
+      "cfg_weight": 0.3
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "clip": "clips/s01.mp4",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "Every night, one lantern refused to go out.",
+          "start": 0.2
+        }
+      ],
+      "sfx": {
+        "tag": "footsteps",
+        "gain": 0.3
+      }
+    },
+    {
+      "id": "s02",
+      "clip": "clips/s02.mp4",
+      "lines": [
+        {
+          "speaker": "mira",
+          "text": "Who keeps lighting it?",
+          "start": 0.2,
+          "emotion": 0.75,
+          "mood": "scared"
+        },
+        {
+          "speaker": "old_man",
+          "text": "Someone who never stopped waiting.",
+          "pace": 0.3
+        }
+      ],
+      "sfx": {
+        "prompt": "wind through a quiet village at night, distant crickets"
+      },
+      "space": "outdoor"
+    }
+  ],
+  "takes": 3,
+  "space": "room"
+}
